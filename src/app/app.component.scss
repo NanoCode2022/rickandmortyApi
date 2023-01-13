@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    .navbar_container{
+            width: 300px;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            text-align: end;
+            align-items: center;
+            justify-content: end;
+            gap: 12px;
+                .navbar_item{
+                    width: 50px;
+                    list-style: none;
+                    cursor: pointer;
+                }
+    
+        }
+}

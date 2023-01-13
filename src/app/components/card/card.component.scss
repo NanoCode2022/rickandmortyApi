@@ -1,0 +1,56 @@
+.containerC{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(127, 255, 212, 0.39);
+    backdrop-filter: blur(5px);
+
+        .container_card{
+            width: 525px;
+            height: 250px;
+            border-radius: 20px;
+            background-color: aquamarine;
+                .card{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+
+                        .img_card{
+                            border-bottom-left-radius: 20px;
+                            border-top-left-radius: 20px;
+                        }
+
+                        .info_card{
+                            width: 100%;
+                            text-align: center;
+
+                                .info{
+                                    font-weight: 900;
+                                }
+                        }
+
+                        .cruz_card{
+                            padding: 8px;
+                            cursor: pointer;
+                        }
+                }
+        }
+
+
+        @media only screen and (max-width:500px){
+           .container_card{
+                width: 250px;
+                height: max-content;
+                padding: 8px;
+
+                .card{
+               
+                    flex-direction: column;
+                }
+           }
+        }
+}

@@ -1,0 +1,43 @@
+
+.container{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;    
+        .container_main{
+            width: 100%;
+            height: calc(100vh - 100px);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 100px;
+                .section_main{
+                    width: 250px;
+                    height: 250px;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #7fffd4;
+                    border-radius: 20px;
+                    justify-content: end;
+                    cursor: pointer;
+                        img{
+                            height: 100%;
+                            border-top-left-radius: 20px;
+                            border-top-right-radius: 20px;
+                        }
+                        .section_article{
+                            background-color: #6fe7bf;
+                            text-align: center;
+                            border-bottom-left-radius: 20px;
+                            border-bottom-right-radius: 20px;
+                        }
+        
+                }
+                .section_main:hover{
+                    width: 300px;
+                    height: 300px;
+                    transition: all 20ms ease;
+                }
+        }
+        
+}

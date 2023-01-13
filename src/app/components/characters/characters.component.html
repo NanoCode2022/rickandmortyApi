@@ -1,0 +1,25 @@
+<div class="container">
+    <app-card [singleCharacter]="singleCharacter" *ngIf="this.paso" (closeCard)="closeCard($event)"></app-card>
+    <div class="container_search">
+        <form (submit)="onSearch($event)">
+            <input type="text" placeholder="Search..." (keyup)="onKeyName($event)">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+    <div  class="container_characters">
+ 
+    <div *ngFor="let character of allCharacters" class="characters" (click)="getIdCharacter(character.id)">
+        <img [src]="character.image" alt="">
+        <section class="information">
+            <h4>{{ character.name }}</h4>
+            <p>{{ character.species }}</p>
+            <p>{{ character.status }}</p>
+        </section>
+    </div>
+    </div>
+    <div class="pag">
+        <input type="button" value="⫷" (click)="onAntPag()">
+        <label>{{ pageNum }}</label>
+        <input type="button" value="⫸" (click)="onSigPag()">
+    </div>
+</div>

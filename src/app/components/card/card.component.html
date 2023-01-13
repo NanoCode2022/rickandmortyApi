@@ -1,0 +1,14 @@
+<div class="containerC">
+    <div class="container_card">
+        <div class="card">
+            <img class="img_card" [src]="singleCharacter.image" alt="">
+            <section class="info_card">
+                <h4>{{singleCharacter.name}}</h4>
+                <p class="info">species: <span>{{singleCharacter.species}}</span></p>
+                <p class="info">origin: <span>{{singleCharacter.origin.name}}</span></p>
+            </section>
+            <span class="cruz_card" (click)="onCruz()">❌</span>
+        </div>
+        
+    </div>
+</div>
